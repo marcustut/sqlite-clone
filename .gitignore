@@ -4,3 +4,11 @@ build/
 *
 !/**/
 !*.*
+# allow Makefile
+!Makefile
+
+# IDE related stuff
+.vscode/
+
+# object files
+*.o
