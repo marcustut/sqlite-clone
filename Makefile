@@ -3,7 +3,7 @@
 rwildcard=$(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
 
 CC = gcc
-CFLAGS = -O2
+CFLAGS = -O2 -Wall -g
 
 SOURCES = $(wildcard *.c) $(call rwildcard,*/,*.c)
 OBJS = $(addsuffix .o, $(basename $(notdir $(SOURCES))))
